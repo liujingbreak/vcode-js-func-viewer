@@ -1,0 +1,29 @@
+{
+    "name": "jsfuncviewer",
+    "displayName": "jsFuncViewer",
+    "description": "A javascript function structure viewer",
+    "version": "0.0.1",
+    "publisher": "js-func-viewer",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.sayHello"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [{
+            "command": "extension.sayHello",
+            "title": "Hello World"
+        }]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "vscode": "^0.11.0"
+    }
+}
